@@ -16,7 +16,9 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Obj_coin","order":3,"path":"objects/Obj_coin/Obj_coin.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"Spr_coin","order":2,"path":"sprites/Spr_coin/Spr_coin.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
   ],
 }
