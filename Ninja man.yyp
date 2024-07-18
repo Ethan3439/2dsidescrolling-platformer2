@@ -41,6 +41,7 @@
     {"id":{"name":"Spr_coin","path":"sprites/Spr_coin/Spr_coin.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"Spr_sword","path":"sprites/Spr_sword/Spr_sword.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
