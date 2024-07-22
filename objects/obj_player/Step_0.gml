@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 207953D9
-/// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left $(13_10)0 would be no input  
+/// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left $(13_10)0 would be no input
 /// @DnDInput : 2
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check (vk_left)"
 /// @DnDArgument : "var" "move_x"
@@ -18,7 +18,7 @@ move_x = move_x *walk_speed;
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 62A2F1D7
-/// @DnDComment : if we are on the ground 
+/// @DnDComment : if we are on the ground
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
@@ -30,7 +30,7 @@ if ((l62A2F1D7_0 > 0))
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 004CB1A4
-	/// @DnDComment : reset falling speed on movement Y$(13_10)when you landed on the ground 
+	/// @DnDComment : reset falling speed on movement Y$(13_10)when you landed on the ground
 	/// @DnDParent : 62A2F1D7
 	/// @DnDArgument : "var" "move_y"
 	move_y = 0;
@@ -57,13 +57,13 @@ if ((l62A2F1D7_0 > 0))
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 2158A5A9
-/// @DnDComment : if you're not$(13_10)on the ground 
+/// @DnDComment : if you're not$(13_10)on the ground
 else
 {
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 24A613DA
-	/// @DnDComment : if we are falling after$(13_10)a jump 
+	/// @DnDComment : if we are falling after$(13_10)a jump
 	/// @DnDParent : 2158A5A9
 	/// @DnDArgument : "var" "move_y"
 	/// @DnDArgument : "op" "1"
@@ -73,7 +73,7 @@ else
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 380C28BC
-		/// @DnDComment : and gravity 
+		/// @DnDComment : and gravity
 		/// @DnDParent : 24A613DA
 		/// @DnDArgument : "expr" "1"
 		/// @DnDArgument : "expr_relative" "1"
@@ -85,7 +85,7 @@ else
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1
 /// @DnDHash : 2B143612
-/// @DnDComment : 1st object is $(13_10)object to avoid  
+/// @DnDComment : 1st object is $(13_10)object to avoid
 /// @DnDArgument : "xvel" "move_x"
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "walk_speed"

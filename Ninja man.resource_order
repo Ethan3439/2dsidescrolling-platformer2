@@ -17,8 +17,11 @@
   "ResourceOrderSettings":[
     {"name":"Obj_coin","order":3,"path":"objects/Obj_coin/Obj_coin.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"Obj_powerup","order":4,"path":"objects/Obj_powerup/Obj_powerup.yy",},
     {"name":"Spr_coin","order":2,"path":"sprites/Spr_coin/Spr_coin.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
+    {"name":"spr_player_walk","order":4,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
+    {"name":"spr_powerup","order":5,"path":"sprites/spr_powerup/spr_powerup.yy",},
     {"name":"Spr_sword","order":3,"path":"sprites/Spr_sword/Spr_sword.yy",},
   ],
 }
