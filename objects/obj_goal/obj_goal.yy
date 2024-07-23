@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_powerup",
+  "%Name":"obj_goal",
   "eventList":[],
   "managed":true,
-  "name":"Obj_powerup",
+  "name":"obj_goal",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_powerup",
-    "path":"sprites/spr_powerup/spr_powerup.yy",
+    "name":"spr_goal",
+    "path":"sprites/spr_goal/spr_goal.yy",
   },
   "spriteMaskId":null,
   "visible":true,
