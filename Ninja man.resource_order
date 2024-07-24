@@ -22,6 +22,7 @@
     {"name":"spr_coin","order":2,"path":"sprites/spr_coin/spr_coin.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_goal","order":5,"path":"sprites/spr_goal/spr_goal.yy",},
+    {"name":"spr_player_jump","order":6,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
     {"name":"spr_player_walk","order":4,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
   ],
 }
