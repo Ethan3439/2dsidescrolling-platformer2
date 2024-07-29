@@ -19,6 +19,7 @@
     {"name":"obj_goal","order":4,"path":"objects/obj_goal/obj_goal.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"song1","order":1,"path":"sounds/song1/song1.yy",},
     {"name":"spr_coin","order":2,"path":"sprites/spr_coin/spr_coin.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_goal","order":5,"path":"sprites/spr_goal/spr_goal.yy",},
