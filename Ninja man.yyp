@@ -34,6 +34,7 @@
   },
   "name":"Ninja man",
   "resources":[
+    {"id":{"name":"enemy","path":"objects/enemy/enemy.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
