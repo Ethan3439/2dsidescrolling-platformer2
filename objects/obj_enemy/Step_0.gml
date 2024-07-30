@@ -1,18 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 207953D9
-/// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left $(13_10)0 would be no input
-/// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check (vk_left)"
-/// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right) - keyboard_check (vk_left);
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 17D14D4F
-/// @DnDArgument : "expr" "move_x *walk_speed"
-/// @DnDArgument : "var" "move_x"
-move_x = move_x *walk_speed;
-
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 62A2F1D7
@@ -33,22 +18,58 @@ if ((l62A2F1D7_0 > 0))
 	/// @DnDArgument : "var" "move_y"
 	move_y = 0;
 
-	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
-	/// @DnDVersion : 1
-	/// @DnDHash : 6C4F7733
+	/// @DnDAction : YoYo Games.Collisions.If_Object_At
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 4F9D8D49
+	/// @DnDComment : Is there a floor next to the enemy)$(13_10)Then jump over it!$(13_10)$(13_10)Use the sign of move_x (-1 or 1) $(13_10)to check the direction we are $(13_10)currently moving in (accounts for $(13_10)left as -1 or right as 1)
 	/// @DnDParent : 62A2F1D7
-	var l6C4F7733_0;
-	l6C4F7733_0 = keyboard_check(vk_space);
-	if (l6C4F7733_0)
+	/// @DnDArgument : "x" "x + (25 * sign(move_x))"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "object" "obj_floor"
+	/// @DnDSaveInfo : "object" "obj_floor"
+	var l4F9D8D49_0 = instance_place(x + (25 * sign(move_x)), y + 0, [obj_floor]);
+	if ((l4F9D8D49_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 4607911D
+		/// @DnDHash : 42DF6953
 		/// @DnDComment : jump
-		/// @DnDParent : 6C4F7733
+		/// @DnDParent : 4F9D8D49
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;
+	}
+
+	/// @DnDAction : YoYo Games.Collisions.If_Object_At
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 1A2A9ACD
+	/// @DnDComment : Is there a floor next to the enemy)$(13_10)Then jump over it!$(13_10)$(13_10)Use the sign of move_x (-1 or 1) $(13_10)to check the direction we are $(13_10)currently moving in (accounts for $(13_10)left as -1 or right as 1)
+	/// @DnDParent : 62A2F1D7
+	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
+	/// @DnDArgument : "y" "y + 50"
+	/// @DnDArgument : "object" "obj_floor"
+	/// @DnDArgument : "not" "1"
+	/// @DnDSaveInfo : "object" "obj_floor"
+	var l1A2A9ACD_0 = instance_place(x + (30 * sign(move_x)), y + 50, [obj_floor]);
+	if (!(l1A2A9ACD_0 > 0))
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 27C67F9F
+		/// @DnDComment : jump
+		/// @DnDParent : 1A2A9ACD
+		/// @DnDArgument : "expr" "-jump_speed"
+		/// @DnDArgument : "var" "move_y"
+		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 45B778CD
+		/// @DnDComment : flips movement
+		/// @DnDParent : 1A2A9ACD
+		/// @DnDArgument : "expr" "move_x * -1 "
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x * -1 ;
 	}
 }
 
